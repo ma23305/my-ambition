@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     width: theme.spacing(45),
-    backgroundColor: "#FFF",
+    backgroundColor: theme.palette.common.white,
     color: "#0fbe94",
   },
   subTitle: {
@@ -51,14 +51,16 @@ const Slide = (props: Props) => {
         </div>
       </div>
       <div className={classes.slide}>
-        <Typography variant="h2" className={classes.subTitle}>
-          React-Joyrideとは
-        </Typography>
-        <div className={classes.content}>
-          <Typography variant="h3">
-            スマホゲームのようなチュートリアルを
+        <div id="overview">
+          <Typography variant="h2" className={classes.subTitle}>
+            React-Joyrideとは
           </Typography>
-          <Typography variant="h3">簡単に実装できるライブラリ</Typography>
+          <div className={classes.content}>
+            <Typography variant="h3">
+              スマホゲームのようなチュートリアルを
+            </Typography>
+            <Typography variant="h3">簡単に実装できるライブラリ</Typography>
+          </div>
         </div>
       </div>
     </React.Fragment>

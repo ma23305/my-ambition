@@ -32,7 +32,7 @@ function App() {
         styles={{
           options: {
             zIndex: 10000,
-            primaryColor: "#099",
+            primaryColor: "#0fbe94",
           },
         }}
       />

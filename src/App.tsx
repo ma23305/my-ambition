@@ -4,7 +4,8 @@ import "./App.css";
 import Slide from "./slide";
 import steps from "./joyrideSteps";
 
-import Joyride, { CallBackProps, STATUS, ACTIONS, EVENTS } from "react-joyride";
+import Joyride from "react-joyride";
+// import Joyride, { CallBackProps, STATUS, ACTIONS, EVENTS } from "react-joyride";
 
 const locale = {
   back: "戻る",

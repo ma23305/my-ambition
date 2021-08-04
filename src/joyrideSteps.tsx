@@ -7,7 +7,6 @@ const steps: Step[] = [
     disableBeacon: true,
     styles: {
       options: {
-        zIndex: 10000,
         width: "600px",
       },
     },
@@ -26,7 +25,6 @@ const steps: Step[] = [
     disableBeacon: true,
     styles: {
       options: {
-        zIndex: 10000,
         width: "600px",
       },
     },
@@ -46,6 +44,11 @@ const steps: Step[] = [
             </Typography>
           </li>
           <li>
+            <Typography variant="h6" style={{ textAlign: "start" }}>
+              ツール・システムの学習コストを減らせる
+            </Typography>
+          </li>
+          <li>
             <Typography
               variant="h6"
               style={{ textAlign: "start", fontWeight: "bold" }}
@@ -54,6 +57,24 @@ const steps: Step[] = [
             </Typography>
           </li>
         </ul>
+        <Typography variant="h6">新技術チームっぽくない？</Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#reason",
+    title: <Typography variant="h4">ちなみに「joyride」の意味は…</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">けっこうやばい意味らしい。</Typography>
+        <Typography variant="h6" style={{fontWeight:"bold"}}>Hey, come on! We gonna go for a joyride.</Typography>
+        <Typography variant="h6">人生で一度は使ってみたいセリフランキング2位らしい…</Typography>
       </React.Fragment>
     ),
   },

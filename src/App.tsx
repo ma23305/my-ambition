@@ -1,24 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+
+import Slide from "./slide";
+import steps from "./joyrideSteps";
+
+import Joyride, { CallBackProps, STATUS, ACTIONS, EVENTS } from "react-joyride";
+
+const locale = {
+  back: "戻る",
+  close: "閉じる",
+  last: "終わり",
+  next: "次へ",
+  skip: "スキップ",
+};
 
 function App() {
+  const [run, setRun] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Slide setRun={setRun} />
+      <Joyride
+        // callback={handleJoyrideCallback}
+        run={run}
+        steps={steps}
+        locale={locale}
+        continuous={true}
+        scrollToFirstStep={true}
+        showProgress={true}
+        showSkipButton={true}
+        styles={{
+          options: {
+            zIndex: 10000,
+            primaryColor: "#099",
+          },
+        }}
+      />
     </div>
   );
 }

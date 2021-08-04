@@ -56,7 +56,7 @@ const Slide = (props: Props) => {
       </div>
       <div className={classes.slide}>
         <div id="overview">
-          <Typography variant="h2" className={classes.subTitle} id="reason">
+          <Typography variant="h2" className={classes.subTitle}>
             React-Joyrideとは
           </Typography>
           <div className={classes.content}>
@@ -66,14 +66,21 @@ const Slide = (props: Props) => {
             <Typography variant="h3">簡単に実装できるライブラリ</Typography>
           </div>
         </div>
+        <div className={classes.content} id="reason">
+          <Typography variant="h5">
+            Hey, come on! We gonna go for a joyride.
+          </Typography>
+        </div>
       </div>
       <div className={classes.slide}>
-        <Typography variant="h2" className={classes.subTitle} id="reason">
-          効果的な使い方
-        </Typography>
-        <div className={classes.content}>
-          <Typography variant="h3">・新機能の使い方紹介</Typography>
-          <Typography variant="h3">・システムの機能紹介</Typography>
+        <div id="usage">
+          <Typography variant="h2" className={classes.subTitle}>
+            効果的な使い方
+          </Typography>
+          <div className={classes.content}>
+            <Typography variant="h3">・新機能の使い方紹介</Typography>
+            <Typography variant="h3">・システムの機能紹介</Typography>
+          </div>
         </div>
       </div>
     </React.Fragment>

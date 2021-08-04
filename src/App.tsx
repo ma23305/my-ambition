@@ -29,7 +29,6 @@ function App() {
         scrollToFirstStep={true}
         showProgress={true}
         showSkipButton={true}
-        scrollOffset={0}
         styles={{
           options: {
             zIndex: 10000,

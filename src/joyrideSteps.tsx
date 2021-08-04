@@ -73,8 +73,34 @@ const steps: Step[] = [
     content: (
       <React.Fragment>
         <Typography variant="h6">けっこうやばい意味らしい。</Typography>
-        <Typography variant="h6" style={{fontWeight:"bold"}}>Hey, come on! We gonna go for a joyride.</Typography>
-        <Typography variant="h6">人生で一度は使ってみたいセリフランキング2位らしい…</Typography>
+        <Typography variant="h6" style={{ fontWeight: "bold" }}>
+          Hey, come on! We gonna go for a joyride.
+        </Typography>
+        <Typography variant="h6">
+          人生で一度は使ってみたいセリフランキング2位らしい…
+        </Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#usage",
+    title: <Typography variant="h4">なんで？</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          長期的に使うものや使用頻度の高いものに
+        </Typography>
+        <Typography variant="h6">
+          実装するのが効果的なんじゃないかなと思料
+        </Typography>
+        <Typography variant="h6">あまり使用頻度の高くない</Typography>
+        <Typography variant="h6">申し込み画面には向かない感じ</Typography>
       </React.Fragment>
     ),
   },

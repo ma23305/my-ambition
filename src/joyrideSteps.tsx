@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 const steps: Step[] = [
   {
     disableBeacon: true,
+    hideCloseButton: true,
     styles: {
       options: {
         width: "600px",
@@ -23,6 +24,7 @@ const steps: Step[] = [
   },
   {
     disableBeacon: true,
+    hideCloseButton: true,
     styles: {
       options: {
         width: "600px",
@@ -63,6 +65,7 @@ const steps: Step[] = [
   },
   {
     disableBeacon: true,
+    hideCloseButton: true,
     styles: {
       options: {
         width: "600px",
@@ -74,7 +77,7 @@ const steps: Step[] = [
       <React.Fragment>
         <Typography variant="h6">けっこうやばい意味らしい。</Typography>
         <Typography variant="h6" style={{ fontWeight: "bold" }}>
-          Hey, come on! We gonna go for a joyride.
+          さあ、車をブッ飛ばしに行くぜ。
         </Typography>
         <Typography variant="h6">
           人生で一度は使ってみたいセリフランキング2位らしい…
@@ -84,6 +87,7 @@ const steps: Step[] = [
   },
   {
     disableBeacon: true,
+    hideCloseButton: true,
     styles: {
       options: {
         width: "600px",
@@ -101,6 +105,46 @@ const steps: Step[] = [
         </Typography>
         <Typography variant="h6">あまり使用頻度の高くない</Typography>
         <Typography variant="h6">申し込み画面には向かない感じ</Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#setup",
+    title: <Typography variant="h4">準備完了！</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          さぁ！ここからはドキュメントを読みながら
+        </Typography>
+        <Typography variant="h6">実際にコードを書いていこう♪</Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#steps",
+    title: <Typography variant="h4">Stepsって？</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">吹き出し1個1個の定義した変数</Typography>
+        <Typography variant="h6">targetでどこにハイライトするか</Typography>
+        <Typography variant="h6">contentで本文を指定する</Typography>
+        <Typography variant="h6">
+          他にもいろいろ指定できるので、必要に応じて追記しよう
+        </Typography>
       </React.Fragment>
     ),
   },

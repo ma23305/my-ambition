@@ -29,6 +29,11 @@ const useStyles = makeStyles((theme) => ({
   content: {
     margin: theme.spacing(5, 15),
   },
+  code: {
+    backgroundColor: "rgba(0,0,0,0.3)",
+    padding: theme.spacing(1),
+    margin: theme.spacing(1, 0),
+  },
 }));
 
 const Slide = (props: Props) => {
@@ -80,6 +85,40 @@ const Slide = (props: Props) => {
           <div className={classes.content}>
             <Typography variant="h3">・新機能の使い方紹介</Typography>
             <Typography variant="h3">・システムの機能紹介</Typography>
+          </div>
+        </div>
+      </div>
+      <div className={classes.slide}>
+        <div id="setup">
+          <Typography variant="h2" className={classes.subTitle}>
+            導入方法
+          </Typography>
+          <div className={classes.content}>
+            <div className={classes.code}>
+              <Typography variant="h3">npm i react-joyride</Typography>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={classes.slide}>
+        <div id="steps">
+          <Typography variant="h2" className={classes.subTitle}>
+            Stepsを定義しよう
+          </Typography>
+          <div className={classes.content}>
+            <div className={classes.code}>
+              <Typography variant="h3">{"steps: ["}</Typography>
+              <Typography variant="h3">{"　{"}</Typography>
+              <Typography variant="h3">
+                {"　　target: '.my-first-step',"}
+              </Typography>
+              <Typography variant="h3">
+                {"　　content: 'This is my awesome feature!',"}
+              </Typography>
+              <Typography variant="h3">{"　},"}</Typography>
+              <Typography variant="h3">{"　..."}</Typography>
+              <Typography variant="h3">{"]"}</Typography>
+            </div>
           </div>
         </div>
       </div>

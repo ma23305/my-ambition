@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-ambition/static/css/main.521f8294.chunk.css",
-    "main.js": "/my-ambition/static/js/main.a64b31f5.chunk.js",
-    "main.js.map": "/my-ambition/static/js/main.a64b31f5.chunk.js.map",
+    "main.css": "/my-ambition/static/css/main.322f45e9.chunk.css",
+    "main.js": "/my-ambition/static/js/main.fcbf0fdc.chunk.js",
+    "main.js.map": "/my-ambition/static/js/main.fcbf0fdc.chunk.js.map",
     "runtime-main.js": "/my-ambition/static/js/runtime-main.88610135.js",
     "runtime-main.js.map": "/my-ambition/static/js/runtime-main.88610135.js.map",
     "static/js/2.934fea81.chunk.js": "/my-ambition/static/js/2.934fea81.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.3a35f56a.chunk.js": "/my-ambition/static/js/3.3a35f56a.chunk.js",
     "static/js/3.3a35f56a.chunk.js.map": "/my-ambition/static/js/3.3a35f56a.chunk.js.map",
     "index.html": "/my-ambition/index.html",
-    "static/css/main.521f8294.chunk.css.map": "/my-ambition/static/css/main.521f8294.chunk.css.map",
+    "static/css/main.322f45e9.chunk.css.map": "/my-ambition/static/css/main.322f45e9.chunk.css.map",
     "static/js/2.934fea81.chunk.js.LICENSE.txt": "/my-ambition/static/js/2.934fea81.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.88610135.js",
     "static/js/2.934fea81.chunk.js",
-    "static/css/main.521f8294.chunk.css",
-    "static/js/main.a64b31f5.chunk.js"
+    "static/css/main.322f45e9.chunk.css",
+    "static/js/main.fcbf0fdc.chunk.js"
   ]
 }

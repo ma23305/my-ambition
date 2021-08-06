@@ -1,11 +1,16 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0fbe94;
+  -ms-overflow-style: none; /* IE, Edge 対応 */
+  scrollbar-width: none; /* Firefox 対応 */
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 code {

@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
   code: {
     backgroundColor: "rgba(0,0,0,0.3)",
     padding: theme.spacing(1),
-    margin: theme.spacing(1, 0),
     "& > h3": {
       fontFamily:
         'MeiryoKe_Gothic, "Ricty Diminished", "Osaka－等幅", "Osaka-等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", "Courier New", Courier, Monaco, Menlo, Consolas, "Lucida Console", monospace',
@@ -63,6 +62,7 @@ const Slide = (props: Props) => {
           </Button>
         </div>
       </div>
+
       <div className={classes.slide}>
         <div id="overview">
           <Typography variant="h2" className={classes.subTitle}>
@@ -81,6 +81,7 @@ const Slide = (props: Props) => {
           </Typography>
         </div>
       </div>
+
       <div className={classes.slide}>
         <div id="usage">
           <Typography variant="h2" className={classes.subTitle}>
@@ -92,6 +93,7 @@ const Slide = (props: Props) => {
           </div>
         </div>
       </div>
+
       <div className={classes.slide}>
         <div id="setup">
           <Typography variant="h2" className={classes.subTitle}>
@@ -104,6 +106,7 @@ const Slide = (props: Props) => {
           </div>
         </div>
       </div>
+
       <div className={classes.slide}>
         <div id="steps">
           <Typography variant="h2" className={classes.subTitle}>
@@ -126,6 +129,7 @@ const Slide = (props: Props) => {
           </div>
         </div>
       </div>
+
       <div className={classes.slide}>
         <div id="moveJoyride">
           <Typography variant="h2" className={classes.subTitle}>
@@ -151,6 +155,7 @@ const Slide = (props: Props) => {
           </div>
         </div>
       </div>
+
       <div className={classes.slide}>
         <div id="locale">
           <Typography variant="h2" className={classes.subTitle}>
@@ -169,6 +174,7 @@ const Slide = (props: Props) => {
           </div>
         </div>
       </div>
+
       <div className={classes.slide}>
         <div id="color">
           <Typography variant="h2" className={classes.subTitle}>
@@ -180,10 +186,10 @@ const Slide = (props: Props) => {
               <Typography variant="h3">{"　styles={{"}</Typography>
               <Typography variant="h3">{"　　options: {"}</Typography>
               <Typography variant="h3">
-                {'　　　primaryColor: "#f04",'}
+                {'　　　primaryColor: "#0fbe94",'}
               </Typography>
               <Typography variant="h3">{"　　}"}</Typography>
-              <Typography variant="h3">{"　}"}</Typography>
+              <Typography variant="h3">{"　}}"}</Typography>
               <Typography variant="h3">{"/>"}</Typography>
             </div>
           </div>

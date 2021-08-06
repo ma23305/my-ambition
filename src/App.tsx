@@ -50,14 +50,14 @@ function App() {
         callback={handleJoyrideCallback}
         run={run}
         steps={steps}
-        locale={stepIndex < 7 ? localeEn : localeJa}
+        locale={stepIndex < 7 ? localeEn : localeJa} // localeのところで日本語になるように
         continuous={true}
         scrollToFirstStep={true}
         showProgress={true}
         styles={{
           options: {
             zIndex: 10000,
-            primaryColor: stepIndex < 8 ? "#f04" : "#0fbe94",
+            primaryColor: stepIndex < 8 ? "#f04" : "#0fbe94", // colorのところで色が変わるように
           },
         }}
       />

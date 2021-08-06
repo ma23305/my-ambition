@@ -148,6 +148,28 @@ const steps: Step[] = [
       </React.Fragment>
     ),
   },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#moveJoyride",
+    title: <Typography variant="h4">詳しく！</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          Stepsで定義したtargetが表示されるところに記述しよう。
+        </Typography>
+        <Typography variant="h6">(App.tsxとかindex.tsxが楽？)</Typography>
+        <Typography variant="h6">
+          runの値はボタン押下で切り替えよう！
+        </Typography>
+      </React.Fragment>
+    ),
+  },
 ];
 
 export default steps;

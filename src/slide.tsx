@@ -33,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(0,0,0,0.3)",
     padding: theme.spacing(1),
     margin: theme.spacing(1, 0),
+    "& > h3": {
+      fontFamily:
+        'MeiryoKe_Gothic, "Ricty Diminished", "Osaka－等幅", "Osaka-等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", "Courier New", Courier, Monaco, Menlo, Consolas, "Lucida Console", monospace',
+    },
   },
 }));
 
@@ -118,6 +122,31 @@ const Slide = (props: Props) => {
               <Typography variant="h3">{"　},"}</Typography>
               <Typography variant="h3">{"　..."}</Typography>
               <Typography variant="h3">{"]"}</Typography>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={classes.slide}>
+        <div id="moveJoyride">
+          <Typography variant="h2" className={classes.subTitle}>
+            React-Joyrideを動かそう
+          </Typography>
+          <div className={classes.content}>
+            <div className={classes.code}>
+              <Typography variant="h3">
+                {"const [run, setRun] = useState(false);"}
+              </Typography>
+              <Typography variant="h3">{"return ("}</Typography>
+              <Typography variant="h3">{"　<Joyride"}</Typography>
+              <Typography variant="h3">
+                {"　　run={run}　　　　// Joyride起動する/しない"}
+              </Typography>
+              <Typography variant="h3">
+                {"　　steps={steps}　　// さっき定義したstepsを渡す"}
+              </Typography>
+              <Typography variant="h3">{"　　..."}</Typography>
+              <Typography variant="h3">{"　/>"}</Typography>
+              <Typography variant="h3">{")"}</Typography>
             </div>
           </div>
         </div>

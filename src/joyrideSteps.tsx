@@ -2,6 +2,11 @@ import React from "react";
 import { Step } from "react-joyride";
 import Typography from "@material-ui/core/Typography";
 
+const styleCode = {
+  fontFamily:
+    'MeiryoKe_Gothic, "Ricty Diminished", "Osaka－等幅", "Osaka-等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", "Courier New", Courier, Monaco, Menlo, Consolas, "Lucida Console", monospace',
+};
+
 const steps: Step[] = [
   {
     disableBeacon: true,
@@ -167,6 +172,63 @@ const steps: Step[] = [
         <Typography variant="h6">
           runの値はボタン押下で切り替えよう！
         </Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#locale",
+    title: <Typography variant="h4">ほら、変わったでしょ？</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">さっきのJoyride本体に追記しよう！</Typography>
+        <div
+          style={{
+            backgroundColor: "rgba(0,0,0,0.6)",
+            padding: 4,
+            margin: "8,0",
+            color: "#FFF",
+            textAlign: "start",
+          }}
+        >
+          <Typography variant="h6" style={styleCode}>
+            {"<Joyride"}
+          </Typography>
+          <Typography variant="h6" style={styleCode}>
+            {"　..."}
+          </Typography>
+          <Typography variant="h6" style={styleCode}>
+            {"　locale={locale}"}
+          </Typography>
+          <Typography variant="h6" style={styleCode}>
+            {"/>"}
+          </Typography>
+        </div>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#color",
+    title: <Typography variant="h4">変わったでしょ？</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          デフォルトの色がだいぶビビットなので、
+        </Typography>
+        <Typography variant="h6">これで好きな色に変えましょう！</Typography>
       </React.Fragment>
     ),
   },

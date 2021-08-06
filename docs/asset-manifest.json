@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-ambition/static/css/main.521f8294.chunk.css",
-    "main.js": "/my-ambition/static/js/main.6bdf7530.chunk.js",
-    "main.js.map": "/my-ambition/static/js/main.6bdf7530.chunk.js.map",
+    "main.js": "/my-ambition/static/js/main.a64b31f5.chunk.js",
+    "main.js.map": "/my-ambition/static/js/main.a64b31f5.chunk.js.map",
     "runtime-main.js": "/my-ambition/static/js/runtime-main.88610135.js",
     "runtime-main.js.map": "/my-ambition/static/js/runtime-main.88610135.js.map",
     "static/js/2.934fea81.chunk.js": "/my-ambition/static/js/2.934fea81.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.88610135.js",
     "static/js/2.934fea81.chunk.js",
     "static/css/main.521f8294.chunk.css",
-    "static/js/main.6bdf7530.chunk.js"
+    "static/js/main.a64b31f5.chunk.js"
   ]
 }

@@ -50,14 +50,14 @@ function App() {
         callback={handleJoyrideCallback}
         run={run}
         steps={steps}
-        locale={localeEn}
+        locale={stepIndex < 7 ? localeEn : localeJa}
         continuous={true}
         scrollToFirstStep={true}
         showProgress={true}
         styles={{
           options: {
             zIndex: 10000,
-            primaryColor: "#f04",
+            primaryColor: stepIndex < 8 ? "#f04" : "#0fbe94",
           },
         }}
       />

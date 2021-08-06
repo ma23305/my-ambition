@@ -151,6 +151,44 @@ const Slide = (props: Props) => {
           </div>
         </div>
       </div>
+      <div className={classes.slide}>
+        <div id="locale">
+          <Typography variant="h2" className={classes.subTitle}>
+            日本語化しよう
+          </Typography>
+          <div className={classes.content}>
+            <div className={classes.code}>
+              <Typography variant="h3">{"locale = {"}</Typography>
+              <Typography variant="h3">{'　back: "戻る",'}</Typography>
+              <Typography variant="h3">{'　close: "閉じる",'}</Typography>
+              <Typography variant="h3">{'　last: "終わり",'}</Typography>
+              <Typography variant="h3">{'　next: "次へ",'}</Typography>
+              <Typography variant="h3">{'　skip: "スキップ"'}</Typography>
+              <Typography variant="h3">{"}"}</Typography>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={classes.slide}>
+        <div id="color">
+          <Typography variant="h2" className={classes.subTitle}>
+            色を変えよう
+          </Typography>
+          <div className={classes.content}>
+            <div className={classes.code}>
+              <Typography variant="h3">{"<Joyride"}</Typography>
+              <Typography variant="h3">{"　styles={{"}</Typography>
+              <Typography variant="h3">{"　　options: {"}</Typography>
+              <Typography variant="h3">
+                {'　　　primaryColor: "#f04",'}
+              </Typography>
+              <Typography variant="h3">{"　　}"}</Typography>
+              <Typography variant="h3">{"　}"}</Typography>
+              <Typography variant="h3">{"/>"}</Typography>
+            </div>
+          </div>
+        </div>
+      </div>
     </React.Fragment>
   );
 };

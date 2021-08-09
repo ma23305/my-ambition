@@ -232,6 +232,31 @@ const steps: Step[] = [
       </React.Fragment>
     ),
   },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#customize",
+    title: <Typography variant="h4">ここからはいばらの道だぞ</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          callbackがJoyrideが動くたびに呼ばれるよ
+        </Typography>
+        <Typography variant="h6">
+          どのボタンを押されたか、インデックス、
+        </Typography>
+        <Typography variant="h6">引数としていろいろ取得できるので、</Typography>
+        <Typography variant="h6">
+          それを使って自分のやりたいことに合わせてカスタマイズ！
+        </Typography>
+      </React.Fragment>
+    ),
+  },
 ];
 
 export default steps;

@@ -16,7 +16,6 @@ const localeEn = {
   skip: "Skip",
 };
 
-// eslint-disable-next-line
 const localeJa = {
   back: "戻る",
   close: "閉じる",
@@ -27,7 +26,6 @@ const localeJa = {
 
 function App() {
   const [run, setRun] = useState(false);
-  // eslint-disable-next-line
   const [stepIndex, setStepIndex] = useState(0);
 
   const handleJoyrideCallback = (data: CallBackProps) => {
@@ -36,7 +34,6 @@ function App() {
     const finishedStatuses: string[] = [STATUS.FINISHED, STATUS.SKIPPED];
 
     if (finishedStatuses.includes(status)) {
-      // Need to set our running state to false, so we can restart if we click start again.
       setRun(false);
     }
 

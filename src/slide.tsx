@@ -195,6 +195,24 @@ const Slide = (props: Props) => {
           </div>
         </div>
       </div>
+
+      <div className={classes.slide}>
+        <div id="customize">
+          <Typography variant="h2" className={classes.subTitle}>
+            もっと細かくカスタマイズしよう
+          </Typography>
+          <div className={classes.content}>
+            <div className={classes.code}>
+              <Typography variant="h3">{"<Joyride"}</Typography>
+              <Typography variant="h3">
+                {"　callback={handleJoyrideCallback}"}
+              </Typography>
+              <Typography variant="h3">{"　..."}</Typography>
+              <Typography variant="h3">{"/>"}</Typography>
+            </div>
+          </div>
+        </div>
+      </div>
     </React.Fragment>
   );
 };

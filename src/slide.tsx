@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
   slide: {
-    height: "95vh",
+    minHeight: "95vh",
     color: "#fff",
     textAlign: "start",
     padding: theme.spacing(3),
@@ -210,6 +210,41 @@ const Slide = (props: Props) => {
               <Typography variant="h3">{"　..."}</Typography>
               <Typography variant="h3">{"/>"}</Typography>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={classes.slide}>
+        <Typography variant="h2" className={classes.subTitle}>
+          コールバック関数をもっと詳しく
+        </Typography>
+        <div className={classes.content}>
+          <div className={classes.code}>
+            <Typography variant="h3" id="joyride-import">
+              {"import { CallBackProps, STATUS, ACTIONS, EVENTS }"}
+              <br />
+              {"　from 'react-joyride';"}
+            </Typography>
+            <Typography variant="h3">{"　"}</Typography>
+            <Typography variant="h3">
+              {"const handleJoyrideCallback = (data: CallBackProps) => {"}
+            </Typography>
+            <Typography variant="h3">
+              {"　const { action, index, status, type } = data;"}
+            </Typography>
+            <Typography variant="h3" id="callback-sample">
+              {"　const finishedStatuses: string[]"}
+              <br />
+              {"　　 = [STATUS.FINISHED, STATUS.SKIPPED];"}
+              <br />
+              <br />
+              {"　if (finishedStatuses.includes(status)) {"}
+              <br />
+              {"　　setRun(false);"}
+              <br />
+              {"　}"}
+            </Typography>
+            <Typography variant="h3">{"}"}</Typography>
           </div>
         </div>
       </div>

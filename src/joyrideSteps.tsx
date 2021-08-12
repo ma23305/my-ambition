@@ -257,6 +257,51 @@ const steps: Step[] = [
       </React.Fragment>
     ),
   },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#joyride-import",
+    title: <Typography variant="h4">各種インポート</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          コールバック関数の引数や、定数をインポートしましょう
+        </Typography>
+        <Typography variant="h6">
+          実際に何が返ってくるかは、ドキュメントを見てください
+        </Typography>
+        <Typography variant="h6">
+          この時はこのstatusとactionが返ってくるから...
+        </Typography>
+        <Typography variant="h6">
+          と、やりながら組み立てていくのがわかりやすい
+        </Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#callback-sample",
+    title: <Typography variant="h4">このコードは...?</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">最後のStepsまで終わった、</Typography>
+        <Typography variant="h6">もしくはスキップボタンを押した時に</Typography>
+        <Typography variant="h6">runをfalseにしているよ</Typography>
+      </React.Fragment>
+    ),
+  },
 ];
 
 export default steps;

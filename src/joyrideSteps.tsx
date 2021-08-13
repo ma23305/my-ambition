@@ -302,6 +302,28 @@ const steps: Step[] = [
       </React.Fragment>
     ),
   },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#dialog",
+    title: <Typography variant="h4">多分だけど...</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          もっと良い書き方があるはず。募集中！！
+        </Typography>
+        <Typography variant="h6" style={{ fontWeight: "bold" }}>
+          一度切ってからまた起動する
+        </Typography>
+        <Typography variant="h6">これに気づくまでが長かった...</Typography>
+      </React.Fragment>
+    ),
+  },
 ];
 
 export default steps;

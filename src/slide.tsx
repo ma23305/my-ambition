@@ -2,6 +2,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContent from "@material-ui/core/DialogContent";
+import Divider from "@material-ui/core/Divider";
 
 const useStyles = makeStyles((theme) => ({
   slide: {
@@ -248,12 +252,50 @@ const Slide = (props: Props) => {
           </div>
         </div>
       </div>
+      <div className={classes.slide}>
+        <Typography variant="h2" className={classes.subTitle} id="thoughts">
+          実際にコードを書いて感じたこと
+        </Typography>
+        <div className={classes.content}>
+          <Typography variant="h3" id="thoughts1">
+            ・紹介したい機能が複雑であればあるほど制御が大変
+          </Typography>
+          <Typography variant="h3" id="thoughts2">
+            ・そもそもこいつってなんて言えば伝わる？
+          </Typography>
+          <Typography variant="h3" id="thoughts3">
+            ・保守が大変そう
+          </Typography>
+          <Typography variant="h3" id="thoughts4">
+            ・公式のDemoにある「次へ」を押さずに進むやつやりたい
+          </Typography>
+        </div>
+      </div>
+
+      <Dialog open={props.open} id="dialog">
+        <DialogTitle>モーダルの要素をtargetにしたい</DialogTitle>
+        <Divider />
+        <DialogContent>
+          <Typography variant="subtitle1">
+            Joyrideのコールバックが呼ばれたタイミングだと、
+            <br />
+            モーダルが表示前なので、ターゲットが無いよって怒られる。
+            <br />
+            なので、一度Joyrideを切って、モーダル出して、再びJoyrideを起動させる
+            <br />
+            ここにコードを書くには複雑すぎるので、
+            <br />
+            これは実際のコードを見て欲しい。
+          </Typography>
+        </DialogContent>
+      </Dialog>
     </React.Fragment>
   );
 };
 
 type Props = {
   setRun: Function;
+  open: boolean;
 };
 
 export default Slide;

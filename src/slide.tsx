@@ -92,8 +92,12 @@ const Slide = (props: Props) => {
             効果的な使い方
           </Typography>
           <div className={classes.content}>
-            <Typography variant="h3">・新機能の使い方紹介</Typography>
-            <Typography variant="h3">・システムの機能紹介</Typography>
+            <Typography variant="h3" gutterBottom>
+              ・新機能の使い方紹介
+            </Typography>
+            <Typography variant="h3" gutterBottom>
+              ・システムの機能紹介
+            </Typography>
           </div>
         </div>
       </div>
@@ -270,26 +274,14 @@ const Slide = (props: Props) => {
           <Typography variant="h3" id="thoughts4" gutterBottom>
             ・公式のDemoにある「次へ」を押さずに進むやつやりたい
           </Typography>
-        </div>
-      </div>
-
-      <div className={classes.slide}>
-        <Typography
-          variant="h2"
-          className={classes.subTitle}
-          id="future-challenge"
-        >
-          今後の課題
-        </Typography>
-        <div className={classes.content}>
-          <Typography variant="h3" id="thoughts1" gutterBottom>
+          <Typography variant="h3" id="thoughts5" gutterBottom>
             ・<span className={classes.code}>{"<Joyride ..."}</span>
             のタグを分ける
           </Typography>
-          <Typography variant="h3" id="thoughts1" gutterBottom>
+          <Typography variant="h3" id="thoughts6" gutterBottom>
             ・stepsの定義ファイルは外に出そう
           </Typography>
-          <Typography variant="h3" id="thoughts1" gutterBottom>
+          <Typography variant="h3" id="thoughts7" gutterBottom>
             ・コールバック関数、コメントは多めでちょうどいい
           </Typography>
         </div>

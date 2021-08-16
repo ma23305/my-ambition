@@ -448,6 +448,73 @@ const steps: Step[] = [
       </React.Fragment>
     ),
   },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#thoughts5",
+    title: <Typography variant="h4">なんで？</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          コールバック関数がカオスなことになるから。
+        </Typography>
+        <Typography variant="h6">
+          1つのStepsに1つのJoyrideタグにしたほうが良いかなーって
+        </Typography>
+        <Typography variant="h6">無理に1つにまとめる必要はなさそう</Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#thoughts6",
+    title: <Typography variant="h4">なんで？</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">どうしても長くなるから。</Typography>
+        <Typography variant="h6">
+          これにより、「次へ」ボタン押さずに...っていうのは
+        </Typography>
+        <Typography variant="h6">絶望的になる気がするけど...</Typography>
+        <Typography variant="h6">そこにそこまでのこだわりはない。</Typography>
+        <Typography variant="h6">可読性の方が大事。</Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#thoughts6",
+    title: <Typography variant="h4">なんで？</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">わかりやすくするためよ！</Typography>
+        <Typography variant="h6">複雑になると、</Typography>
+        <Typography variant="h6">
+          後から読み返して自分でもわからなくなるわ！！
+        </Typography>
+        <Typography variant="h6">
+          「なんでこれで動いてんの？」ってなる。
+        </Typography>
+      </React.Fragment>
+    ),
+  },
 ];
 
 export default steps;

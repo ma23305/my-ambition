@@ -252,22 +252,45 @@ const Slide = (props: Props) => {
           </div>
         </div>
       </div>
+
       <div className={classes.slide}>
         <Typography variant="h2" className={classes.subTitle} id="thoughts">
           実際にコードを書いて感じたこと
         </Typography>
         <div className={classes.content}>
-          <Typography variant="h3" id="thoughts1">
+          <Typography variant="h3" id="thoughts1" gutterBottom>
             ・紹介したい機能が複雑であればあるほど制御が大変
           </Typography>
-          <Typography variant="h3" id="thoughts2">
+          <Typography variant="h3" id="thoughts2" gutterBottom>
             ・そもそもこいつってなんて言えば伝わる？
           </Typography>
-          <Typography variant="h3" id="thoughts3">
+          <Typography variant="h3" id="thoughts3" gutterBottom>
             ・保守が大変そう
           </Typography>
-          <Typography variant="h3" id="thoughts4">
+          <Typography variant="h3" id="thoughts4" gutterBottom>
             ・公式のDemoにある「次へ」を押さずに進むやつやりたい
+          </Typography>
+        </div>
+      </div>
+
+      <div className={classes.slide}>
+        <Typography
+          variant="h2"
+          className={classes.subTitle}
+          id="future-challenge"
+        >
+          今後の課題
+        </Typography>
+        <div className={classes.content}>
+          <Typography variant="h3" id="thoughts1" gutterBottom>
+            ・<span className={classes.code}>{"<Joyride ..."}</span>
+            のタグを分ける
+          </Typography>
+          <Typography variant="h3" id="thoughts1" gutterBottom>
+            ・stepsの定義ファイルは外に出そう
+          </Typography>
+          <Typography variant="h3" id="thoughts1" gutterBottom>
+            ・コールバック関数、コメントは多めでちょうどいい
           </Typography>
         </div>
       </div>

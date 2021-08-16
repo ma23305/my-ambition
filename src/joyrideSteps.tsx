@@ -324,6 +324,130 @@ const steps: Step[] = [
       </React.Fragment>
     ),
   },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#thoughts",
+    title: <Typography variant="h4">反省とこれから</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          わからないまま書き始め、もっと良い書き方あったよなぁと
+        </Typography>
+        <Typography variant="h6">
+          これから書く際は私の残念コードを反面教師にしてくれ！
+        </Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#thoughts1",
+    title: <Typography variant="h4">なんで？</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          モーダルやページ遷移があると本当に厄介
+        </Typography>
+        <Typography variant="h6">
+          一部処理は飛ばして画面遷移だけ見せたいとか
+        </Typography>
+        <Typography variant="h6">
+          Stateを変更したい！とかなるからほんと辛い。
+        </Typography>
+        <Typography variant="h6">
+          けど、単純なものはホント楽に実装できる。
+        </Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#thoughts2",
+    title: <Typography variant="h4">なんで？</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          ヘルプ？チュートリアル？ツアー？使い方？ガイド？
+        </Typography>
+        <Typography variant="h6">考えれば考えるほどわからない。</Typography>
+        <Typography variant="h6">
+          ヘルプかなと思ってサンプル作ったけど、
+        </Typography>
+        <Typography variant="h6">
+          使い方の方が良かったかなとか思い始めてる。
+        </Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#thoughts3",
+    title: <Typography variant="h4">なんで？</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          1個目でも言ったけど、機能が複雑だと
+        </Typography>
+        <Typography variant="h6">
+          コールバックの中身がすぐ膨大な量のコードになる
+        </Typography>
+        <Typography variant="h6">
+          あんなのパッと見てすぐわからないでしょ？
+        </Typography>
+        <Typography variant="h6">
+          頑張って読みやすいコードにしようと心がけていはいる。
+        </Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
+    target: "#thoughts4",
+    title: <Typography variant="h4">なんで？</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          今作っているシステムの構成では無理そう？
+        </Typography>
+        <Typography variant="h6">
+          次へを押すんじゃなくて、実際に押すはずのボタンを押して
+        </Typography>
+        <Typography variant="h6">
+          次に進めたい。その方がわかりやすそうじゃないですか？
+        </Typography>
+      </React.Fragment>
+    ),
+  },
 ];
 
 export default steps;

@@ -33,7 +33,7 @@ function App() {
   const handleJoyrideCallback = (data: CallBackProps) => {
     const { action, index, status, type } = data;
     const finishedStatuses: string[] = [STATUS.FINISHED, STATUS.SKIPPED];
-    const nextStatuses: string[] = [EVENTS.STEP_AFTER, EVENTS.TARGET_NOT_FOUND];
+    const nextStatuses: string[] = [EVENTS.STEP_AFTER];
 
     if (nextStatuses.includes(type)) {
       // インデックスのインクリメント
@@ -54,6 +54,10 @@ function App() {
       setTimeout(() => {
         setRun(true);
       }, 400);
+    }
+
+    if (index === 13) {
+      setOpen(false);
     }
 
     console.groupCollapsed(type);

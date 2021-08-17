@@ -121,6 +121,33 @@ const steps: Step[] = [
         width: "600px",
       },
     },
+    target: "#usage-emphasis",
+    title: <Typography variant="h4">ここが一番大事！</Typography>,
+    content: (
+      <React.Fragment>
+        <Typography variant="h6">
+          実際に使う人たちに、一番効率的に使って欲しい
+        </Typography>
+        <Typography variant="h6">
+          けれど、その使い方がしっかり現場まで伝わっているか？
+        </Typography>
+        <Typography variant="h6">
+          というのは、我々では関与できない部分。
+        </Typography>
+        <Typography variant="h6">
+          ならば、システムの中に組み込んでしまえ！！
+        </Typography>
+      </React.Fragment>
+    ),
+  },
+  {
+    disableBeacon: true,
+    hideCloseButton: true,
+    styles: {
+      options: {
+        width: "600px",
+      },
+    },
     target: "#setup",
     title: <Typography variant="h4">準備完了！</Typography>,
     content: (
@@ -500,7 +527,7 @@ const steps: Step[] = [
         width: "600px",
       },
     },
-    target: "#thoughts6",
+    target: "#thoughts7",
     title: <Typography variant="h4">なんで？</Typography>,
     content: (
       <React.Fragment>

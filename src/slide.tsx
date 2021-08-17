@@ -7,6 +7,9 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
 import Divider from "@material-ui/core/Divider";
 
+import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
+import OpenInNewIcon from "@material-ui/icons/OpenInNew";
+
 const useStyles = makeStyles((theme) => ({
   slide: {
     minHeight: "95vh",
@@ -32,6 +35,11 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     margin: theme.spacing(5, 15),
+    " & > h3": {
+      "& > a": {
+        color: "#e0ffff",
+      },
+    },
   },
   code: {
     backgroundColor: "rgba(0,0,0,0.3)",
@@ -40,6 +48,9 @@ const useStyles = makeStyles((theme) => ({
       fontFamily:
         'MeiryoKe_Gothic, "Ricty Diminished", "Osaka－等幅", "Osaka-等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", "Courier New", Courier, Monaco, Menlo, Consolas, "Lucida Console", monospace',
     },
+  },
+  emphasis: {
+    fontWeight: "bold",
   },
 }));
 
@@ -99,6 +110,20 @@ const Slide = (props: Props) => {
               ・システムの機能紹介
             </Typography>
           </div>
+        </div>
+        <br />
+        <br />
+        <div className={classes.content} id="usage-emphasis">
+          <Typography variant="h3" className={classes.emphasis}>
+            「もっと作業効率化できるように作ったんだけどな」
+          </Typography>
+          <Typography variant="h3" className={classes.emphasis}>
+            「この機能、とても便利なのに使われてないな」
+          </Typography>
+          <Typography variant="h3">実装してるからこそ思うことを</Typography>
+          <Typography variant="h3">
+            「使い方を教える」という体で利用者に伝えられる！
+          </Typography>
         </div>
       </div>
 
@@ -283,6 +308,76 @@ const Slide = (props: Props) => {
           </Typography>
           <Typography variant="h3" id="thoughts7" gutterBottom>
             ・コールバック関数、コメントは多めでちょうどいい
+          </Typography>
+        </div>
+      </div>
+
+      <div className={classes.slide}>
+        <Typography variant="h2" className={classes.subTitle} id="thoughts">
+          まとめ
+        </Typography>
+        <div className={classes.content}>
+          <Typography variant="h3" id="thoughts1">
+            React-Joyride、使いたくなったでしょ？
+          </Typography>
+          <Typography variant="h3" id="thoughts1" gutterBottom>
+            システムに組み込まれてたら、「おっ？！」ってなるでしょ？
+          </Typography>
+          <Typography variant="h3" id="thoughts1">
+            お客さまから要望されている機能ではないけれど、
+          </Typography>
+          <Typography variant="h3" id="thoughts1" gutterBottom>
+            とにかく使ってみたいんです。
+          </Typography>
+          <Typography variant="h3" id="thoughts1">
+            最低限抑えるべきポイントがわかれば、
+          </Typography>
+          <Typography variant="h3" id="thoughts1">
+            多少複雑な機能でも、Joyrideで見せることができるはず！
+          </Typography>
+        </div>
+        <div className={classes.content}>
+          <Typography variant="h4">
+            <ArrowDownwardIcon />
+            に参考資料あります
+          </Typography>
+        </div>
+      </div>
+
+      <div className={classes.slide}>
+        <Typography variant="h2" className={classes.subTitle}>
+          参考資料
+        </Typography>
+        <div className={classes.content}>
+          <Typography variant="h3" gutterBottom>
+            <a
+              href="https://github.com/gilbarbara/react-joyride"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <OpenInNewIcon />
+              React-Joyride GitHub
+            </a>
+          </Typography>
+          <Typography variant="h3" gutterBottom>
+            <a
+              href="https://docs.react-joyride.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <OpenInNewIcon />
+              React-Joyride ドキュメント
+            </a>
+          </Typography>
+          <Typography variant="h3" gutterBottom>
+            <a
+              href="https://react-joyride.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <OpenInNewIcon />
+              React-Joyride デモ
+            </a>
           </Typography>
         </div>
       </div>

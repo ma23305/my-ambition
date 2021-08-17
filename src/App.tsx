@@ -46,17 +46,17 @@ function App() {
     }
 
     // モーダルを出した時の処理
-    if (EVENTS.TARGET_NOT_FOUND === type && index === 12) {
+    if (EVENTS.TARGET_NOT_FOUND === type && index === 13) {
       setRun(false); // 一度Joyrideを切る
       setOpen(true); // モーダルを出す
-      setStepIndex(12); // indexを指定し直す
+      setStepIndex(13); // indexを指定し直す
       // モーダルが出た状態で再びJoyrideを起動
       setTimeout(() => {
         setRun(true);
       }, 400);
     }
 
-    if (index === 13) {
+    if (index === 14) {
       setOpen(false);
     }
 

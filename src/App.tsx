@@ -4,9 +4,9 @@ import "./App.css";
 import Slide from "./slide";
 import steps from "./joyrideSteps";
 
-// eslint-disable-next-line
 import Joyride, { CallBackProps, STATUS, ACTIONS, EVENTS } from "react-joyride";
 
+// 切り替えのために英語分定義
 const localeEn = {
   back: "Back",
   close: "Close",
@@ -16,6 +16,7 @@ const localeEn = {
   skip: "Skip",
 };
 
+// 日本語用定義
 const localeJa = {
   back: "戻る",
   close: "閉じる",
@@ -25,9 +26,9 @@ const localeJa = {
 };
 
 function App() {
-  const [run, setRun] = useState(false);
-  const [open, setOpen] = useState(false);
-  const [stepIndex, setStepIndex] = useState(0);
+  const [run, setRun] = useState(false); // Joyrideのトリガー
+  const [open, setOpen] = useState(false); // モーダル用
+  const [stepIndex, setStepIndex] = useState(0); // Joyrideインデックス
 
   // コールバック関数
   const handleJoyrideCallback = (data: CallBackProps) => {
@@ -56,6 +57,7 @@ function App() {
       }, 400);
     }
 
+    // モーダル閉じる
     if (index === 14) {
       setOpen(false);
     }

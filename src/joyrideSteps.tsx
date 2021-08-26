@@ -9,15 +9,17 @@ const styleCode = {
 
 const steps: Step[] = [
   {
-    disableBeacon: true,
-    hideCloseButton: true,
+    disableBeacon: true, // ビーコン非表示
+    hideCloseButton: true, // 閉じるボタン非表示
     styles: {
       options: {
+        // いろいろスタイルかけるよ
         width: "600px",
       },
     },
-    target: "#title",
-    title: <Typography variant="h4">という野望を叶えるために...</Typography>,
+    target: "#title", // ターゲット指定
+    title: <Typography variant="h4">という野望を叶えるために...</Typography>, // タイトル
+    // 本文
     content: (
       <React.Fragment>
         <Typography variant="h6">
